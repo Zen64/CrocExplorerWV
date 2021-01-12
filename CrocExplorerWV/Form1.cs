@@ -562,5 +562,33 @@ namespace CrocExplorerWV
                 Log.WriteLine("Saved to " + s);
             }
         }
+
+        private void exportAllAsWAVToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog d = new FolderBrowserDialog();
+            if (d.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                string output = d.SelectedPath + "\\";
+                int count = 0;
+                prog.Minimum = 0;
+                prog.Maximum = listBox3.Items.Count;
+                foreach (string entry in listBox3.Items)
+                {
+                    if ((count % 10) == 0)
+                    {
+                        prog.Value = count;
+                        Application.DoEvents();
+                    }
+
+                    string splitEntry = entry.Split('>')[1];
+                    File.WriteAllBytes(d.SelectedPath + "\\" + splitEntry, LoadFile(entry));
+                    Log.WriteLine("Saved as " + splitEntry);
+                    
+                    count++;
+                }
+                prog.Value = 0;
+                Log.WriteLine("Done.");
+            }
+        }
     }
 }

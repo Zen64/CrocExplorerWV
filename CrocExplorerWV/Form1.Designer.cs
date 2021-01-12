@@ -32,6 +32,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.dumpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportRAWToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.importRAWToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.texturesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportBMPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -40,6 +41,10 @@
             this.importPNGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modelsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportAsOBJToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.soundsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportAsWAVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
+            this.importWAVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -58,21 +63,17 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.pb2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.rtb1 = new System.Windows.Forms.RichTextBox();
-            this.prog = new System.Windows.Forms.ProgressBar();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.splitContainer5 = new System.Windows.Forms.SplitContainer();
             this.listBox3 = new System.Windows.Forms.ListBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.soundsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
-            this.exportAsWAVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
-            this.importWAVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rtb1 = new System.Windows.Forms.RichTextBox();
+            this.prog = new System.Windows.Forms.ProgressBar();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.exportAllAsWAVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -126,20 +127,25 @@
             this.toolStripMenuItem2,
             this.importRAWToolStripMenuItem});
             this.dumpToolStripMenuItem.Name = "dumpToolStripMenuItem";
-            this.dumpToolStripMenuItem.Size = new System.Drawing.Size(35, 20);
+            this.dumpToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.dumpToolStripMenuItem.Text = "File";
             // 
             // exportRAWToolStripMenuItem
             // 
             this.exportRAWToolStripMenuItem.Name = "exportRAWToolStripMenuItem";
-            this.exportRAWToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.exportRAWToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exportRAWToolStripMenuItem.Text = "Export RAW";
             this.exportRAWToolStripMenuItem.Click += new System.EventHandler(this.exportRAWToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(177, 6);
             // 
             // importRAWToolStripMenuItem
             // 
             this.importRAWToolStripMenuItem.Name = "importRAWToolStripMenuItem";
-            this.importRAWToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.importRAWToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.importRAWToolStripMenuItem.Text = "Import RAW";
             this.importRAWToolStripMenuItem.Click += new System.EventHandler(this.importRAWToolStripMenuItem_Click);
             // 
@@ -157,26 +163,26 @@
             // exportBMPToolStripMenuItem
             // 
             this.exportBMPToolStripMenuItem.Name = "exportBMPToolStripMenuItem";
-            this.exportBMPToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.exportBMPToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
             this.exportBMPToolStripMenuItem.Text = "Export selected as PNG";
             this.exportBMPToolStripMenuItem.Click += new System.EventHandler(this.exportBMPToolStripMenuItem_Click_1);
             // 
             // exportAllPIXAsBMPToolStripMenuItem
             // 
             this.exportAllPIXAsBMPToolStripMenuItem.Name = "exportAllPIXAsBMPToolStripMenuItem";
-            this.exportAllPIXAsBMPToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.exportAllPIXAsBMPToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
             this.exportAllPIXAsBMPToolStripMenuItem.Text = "Export all as PNG";
             this.exportAllPIXAsBMPToolStripMenuItem.Click += new System.EventHandler(this.exportAllPIXAsBMPToolStripMenuItem_Click_1);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(183, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(192, 6);
             // 
             // importPNGToolStripMenuItem
             // 
             this.importPNGToolStripMenuItem.Name = "importPNGToolStripMenuItem";
-            this.importPNGToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.importPNGToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
             this.importPNGToolStripMenuItem.Text = "Import PNG";
             this.importPNGToolStripMenuItem.Click += new System.EventHandler(this.importPNGToolStripMenuItem_Click);
             // 
@@ -185,15 +191,45 @@
             this.modelsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.exportAsOBJToolStripMenuItem});
             this.modelsToolStripMenuItem.Name = "modelsToolStripMenuItem";
-            this.modelsToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.modelsToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
             this.modelsToolStripMenuItem.Text = "Models";
             // 
             // exportAsOBJToolStripMenuItem
             // 
             this.exportAsOBJToolStripMenuItem.Name = "exportAsOBJToolStripMenuItem";
-            this.exportAsOBJToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.exportAsOBJToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exportAsOBJToolStripMenuItem.Text = "Export as OBJ";
             this.exportAsOBJToolStripMenuItem.Click += new System.EventHandler(this.exportAsOBJToolStripMenuItem_Click);
+            // 
+            // soundsToolStripMenuItem
+            // 
+            this.soundsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exportAsWAVToolStripMenuItem,
+            this.exportAllAsWAVToolStripMenuItem,
+            this.toolStripMenuItem3,
+            this.importWAVToolStripMenuItem});
+            this.soundsToolStripMenuItem.Name = "soundsToolStripMenuItem";
+            this.soundsToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
+            this.soundsToolStripMenuItem.Text = "Sounds";
+            // 
+            // exportAsWAVToolStripMenuItem
+            // 
+            this.exportAsWAVToolStripMenuItem.Name = "exportAsWAVToolStripMenuItem";
+            this.exportAsWAVToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
+            this.exportAsWAVToolStripMenuItem.Text = "Export selected as WAV";
+            this.exportAsWAVToolStripMenuItem.Click += new System.EventHandler(this.exportAsWAVToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(193, 6);
+            // 
+            // importWAVToolStripMenuItem
+            // 
+            this.importWAVToolStripMenuItem.Name = "importWAVToolStripMenuItem";
+            this.importWAVToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
+            this.importWAVToolStripMenuItem.Text = "Import WAV";
+            this.importWAVToolStripMenuItem.Click += new System.EventHandler(this.importWAVToolStripMenuItem_Click);
             // 
             // splitContainer1
             // 
@@ -425,32 +461,6 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // rtb1
-            // 
-            this.rtb1.DetectUrls = false;
-            this.rtb1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rtb1.Font = new System.Drawing.Font("Courier New", 8.25F);
-            this.rtb1.HideSelection = false;
-            this.rtb1.Location = new System.Drawing.Point(0, 0);
-            this.rtb1.Name = "rtb1";
-            this.rtb1.ReadOnly = true;
-            this.rtb1.Size = new System.Drawing.Size(715, 118);
-            this.rtb1.TabIndex = 0;
-            this.rtb1.Text = "";
-            this.rtb1.WordWrap = false;
-            // 
-            // prog
-            // 
-            this.prog.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.prog.Location = new System.Drawing.Point(0, 118);
-            this.prog.Name = "prog";
-            this.prog.Size = new System.Drawing.Size(715, 23);
-            this.prog.TabIndex = 1;
-            // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.splitContainer5);
@@ -504,6 +514,16 @@
             this.textBox3.TabIndex = 0;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(3, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Play";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -522,49 +542,38 @@
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
             // 
-            // button1
+            // rtb1
             // 
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Play";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.rtb1.DetectUrls = false;
+            this.rtb1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtb1.Font = new System.Drawing.Font("Courier New", 8.25F);
+            this.rtb1.HideSelection = false;
+            this.rtb1.Location = new System.Drawing.Point(0, 0);
+            this.rtb1.Name = "rtb1";
+            this.rtb1.ReadOnly = true;
+            this.rtb1.Size = new System.Drawing.Size(715, 118);
+            this.rtb1.TabIndex = 0;
+            this.rtb1.Text = "";
+            this.rtb1.WordWrap = false;
             // 
-            // soundsToolStripMenuItem
+            // prog
             // 
-            this.soundsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.exportAsWAVToolStripMenuItem,
-            this.toolStripMenuItem3,
-            this.importWAVToolStripMenuItem});
-            this.soundsToolStripMenuItem.Name = "soundsToolStripMenuItem";
-            this.soundsToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
-            this.soundsToolStripMenuItem.Text = "Sounds";
+            this.prog.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.prog.Location = new System.Drawing.Point(0, 118);
+            this.prog.Name = "prog";
+            this.prog.Size = new System.Drawing.Size(715, 23);
+            this.prog.TabIndex = 1;
             // 
-            // toolStripMenuItem2
+            // timer1
             // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(149, 6);
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // exportAsWAVToolStripMenuItem
+            // exportAllAsWAVToolStripMenuItem
             // 
-            this.exportAsWAVToolStripMenuItem.Name = "exportAsWAVToolStripMenuItem";
-            this.exportAsWAVToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.exportAsWAVToolStripMenuItem.Text = "Export WAV";
-            this.exportAsWAVToolStripMenuItem.Click += new System.EventHandler(this.exportAsWAVToolStripMenuItem_Click);
-            // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(149, 6);
-            // 
-            // importWAVToolStripMenuItem
-            // 
-            this.importWAVToolStripMenuItem.Name = "importWAVToolStripMenuItem";
-            this.importWAVToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.importWAVToolStripMenuItem.Text = "Import WAV";
-            this.importWAVToolStripMenuItem.Click += new System.EventHandler(this.importWAVToolStripMenuItem_Click);
+            this.exportAllAsWAVToolStripMenuItem.Name = "exportAllAsWAVToolStripMenuItem";
+            this.exportAllAsWAVToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
+            this.exportAllAsWAVToolStripMenuItem.Text = "Export all as WAV";
+            this.exportAllAsWAVToolStripMenuItem.Click += new System.EventHandler(this.exportAllAsWAVToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -663,6 +672,7 @@
         private System.Windows.Forms.ToolStripMenuItem exportAsWAVToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem importWAVToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exportAllAsWAVToolStripMenuItem;
     }
 }
 
